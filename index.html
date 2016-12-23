@@ -1,0 +1,71 @@
+
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Spurdofy :D</title>
+		<style>
+		textarea
+{
+  width:100%;
+}
+</style>
+		<script>
+		function f() {
+    var text = document.getElementById("t").value;
+	var s = text.replace(/ould/g, 'ud');
+	
+	 s = s.replace(/ck/g, 'g');
+	
+	 s = s.replace(/Th/g,"D");
+     s = s.replace(/th/g,"d");
+	 
+	 s = s.replace(/K/g, 'G');
+	 s = s.replace(/k/g, 'g');
+	
+	 s = s.replace(/T/g, 'D');
+	 s = s.replace(/t/g, 'd');
+	
+	 s = s.replace(/P/g, 'B');
+	 s = s.replace(/p/g, 'b');
+	
+	 s = s.replace(/V/g, 'B');
+	 s = s.replace(/v/g, 'b');
+	 
+	 s = s.replace(/C/g, 'G/Z');
+	 s = s.replace(/c/g, 'g/z');
+	 
+	 s = s.replace(/S/g, 'Z');
+	 s = s.replace(/s/g, 'z');
+	
+
+s= s + ' :'+Array(s.split(' ').length+1).join("D");
+
+
+			document.getElementById("d").innerHTML  = text + '<br>' + s;
+}
+		</script>
+	</head>
+
+	<body>
+	
+
+
+	<div class="wrappi">
+		<div id="rain" style="background-color:#39f;">
+			<div id="tegsti">
+				<textarea id="t" placeholder="Spurdofy text" width =100%></textarea>
+				
+<p id="d"></p>
+				<div>
+					<button onclick="f()">Click me</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+</body>
+</html>
